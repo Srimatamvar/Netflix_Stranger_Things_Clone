@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto; /* Added margin for space */
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 20px; /* Added margin for space */
+}
+
+.logo {
+  max-height: 50px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  color: white; /* Netflix red color */
+  font-family: "Times New Roman", serif;
+}
+
+.buttons {
+  display: flex;
+}
+
+.primary-button,
+.secondary-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-button {
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.secondary-button:hover {
+  background-color: #333;
+}
+
+.series-info {
+  margin-top: 20px;
+  font-size: 36px;
+  color: whitesmoke; /* Lighter color */
+  font-family: "Times New Roman", sans-serif;
+}
+
+.synopsis {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ddd;
+  background-color: black;
+}
+
+.cast,
+.creators {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.cast,
+.creators,
+.cast li,
+.creators p {
+  color: #ddd;
+}
+
+.cast li {
+  margin-bottom: 5px;
+}
+
+.creators p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.characters {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.character {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.character img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.character:hover {
+  transform: scale(1.2);
+}
+
+.character-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.character-description h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.character-description p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.character:hover .character-description {
+  display: block;
+}
+
+.episodes {
+  margin-top: 40px;
+}
+
+.episode {
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.episode:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: rgba(51, 51, 51, 0.8);
+  color: #ddd;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
